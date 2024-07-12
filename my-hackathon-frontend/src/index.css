@@ -174,6 +174,16 @@ a.button--alt, button--alt {
   border: solid 1px #d9d8fc;
 }
 
+a.button:hover, button:hover,
+a.button--alt:hover, button--alt:hover {
+  background-color: #7c76ff;
+}
+
+a.button--alt:hover, button--alt:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
 .button + .button {
   margin-left: 1rem;
 }
