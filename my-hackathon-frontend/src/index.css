@@ -343,6 +343,11 @@ a.link--alt {
   text-align: left;
 }
 
+.prize-image {
+  width: 100%;
+  height: 40%;
+}
+
 .faq {
   text-align: left;
   margin-bottom: 8rem;
