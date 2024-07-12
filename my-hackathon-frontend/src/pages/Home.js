@@ -94,10 +94,10 @@ const Home = () => {
           <h2>Resources</h2>
           <p>For some inspiration to kick things off, check out <a className="link link--alt" href="#">this tutorial</a> on how to start<br />with Strapi and Next 14.</p>
           <div className="links">
-            <a href="#">Get started with Strapi Cloud</a>
-            <a href="#">Strapi Community</a>
-            <a href="#">Strapi Discord</a>
-            <a href="#">Strapi YouTube channel</a>
+            <a href="https://strapi.io/cloud">Get started with Strapi Cloud</a>
+            <a href="https://github.com/strapi/community-content">Strapi Community</a>
+            <a href="https://discord.strapi.io">Strapi Discord</a>
+            <a href="https://www.youtube.com/@Strapi">Strapi YouTube channel</a>
           </div>
         </section>
 
