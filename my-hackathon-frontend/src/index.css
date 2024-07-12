@@ -156,7 +156,7 @@ code {
   text-decoration: none;
 }
 
-a.button, button {
+a.button, .button {
   background-color: #4945ff;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -168,18 +168,18 @@ a.button, button {
   font-size: .8rem;
 }
 
-a.button--alt, button--alt {
+a.button--alt, .button--alt {
   background-color: transparent;
   color: #7b8df7;
   border: solid 1px #d9d8fc;
 }
 
-a.button:hover, button:hover,
-a.button--alt:hover, button--alt:hover {
+a.button:hover, .button:hover,
+a.button--alt:hover, .button--alt:hover {
   background-color: #7c76ff;
 }
 
-a.button--alt:hover, button--alt:hover {
+a.button--alt:hover, .button--alt:hover {
   color: #fff;
   border-color: transparent;
 }

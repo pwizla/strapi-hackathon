@@ -1,73 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  background-color: #16181d;
-  color: #fff;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.form-container {
-  background-color: #1f2227;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 600px;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-input, select {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #2b2e33;
-  color: #fff;
-}
-
-button {
-  background-color: #4945ff;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-button:hover {
-  background-color: #7c76ff;
-} */
-
 .member {
   margin-bottom: 1.5rem;
   display: flex;
@@ -84,4 +14,38 @@ button:hover {
 
 input.looking-for-team {
   width: auto;
+}
+
+a.button, .button {
+  background-color: #4945ff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+a.button--alt, button.button--alt {
+  background-color: transparent;
+  color: #7b8df7;
+  border: solid 1px #d9d8fc;
+}
+
+a.button:hover, button.button:hover,
+a.button--alt:hover, .button--alt:hover {
+  background-color: #7c76ff;
+}
+
+a.button--alt:hover, button.button--alt:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
+button.button--final {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;  
 }

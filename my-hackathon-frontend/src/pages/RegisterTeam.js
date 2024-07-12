@@ -20,7 +20,7 @@ const RegisterTeam = () => {
   };
 
   const navigate = useNavigate();
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
@@ -114,10 +114,10 @@ const RegisterTeam = () => {
                   </label>
                 </div>
               ))}
-              <button type="button button--alt" onClick={handleAddMember}>+ Add another team member</button>
+              <button type="button" className="button button--alt" onClick={handleAddMember}>+ Add another team member</button>
             </div>
           )}
-          <button type="submit">Send registration form</button>
+          <button className="button button--final" type="submit">Send registration form</button>
         </form>
       </div>
     </div>
