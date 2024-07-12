@@ -150,7 +150,7 @@ const Home = () => {
 
         <footer className="footer">
           <h2>Join the headless revolution and stand a chance to win exciting prizes!</h2>
-          <button className="button">Join hackathon</button>
+          <a href="/register-step-1" className="button">Join hackathon</a>
         </footer>
       </main>
     </div>
