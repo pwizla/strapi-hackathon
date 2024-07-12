@@ -63,7 +63,7 @@ const Register = () => {
           <label>
             Date of birth*
             <input
-              type="text"
+              type="date"
               name="birthDate"
               value={formData.birthDate}
               onChange={handleChange}

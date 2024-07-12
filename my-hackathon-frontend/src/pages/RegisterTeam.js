@@ -90,7 +90,7 @@ const RegisterTeam = () => {
                   <label>
                     Team member date of birth*
                     <input
-                      type="text"
+                      type="date"
                       name="birthDate"
                       value={member.birthDate}
                       onChange={(e) => handleMemberChange(index, e)}
