@@ -9,14 +9,14 @@ const Home = () => {
       <header className="header">
         <img className="logo" src={logo} alt="logo" />
         <nav className="nav">
-          <a href="#">Getting started</a>
-          <a href="#">Resources</a>
-          <a href="#">Prizes</a>
-          <a href="#">FAQ</a>
+          <a href="#heading-1">Getting started</a>
+          <a href="#heading-2">Resources</a>
+          <a href="#heading-3">Prizes</a>
+          <a href="#heading-4">FAQ</a>
         </nav>
         <div className="nav-cta">
           <button className="button button--alt">Share on X</button>
-          <button className="button">Join hackathon</button>
+          <button className="button"><a href="/register-step1">Join Hackathon</a></button>
         </div>
       </header>
 
@@ -59,7 +59,7 @@ const Home = () => {
         </section>
 
         <section className="steps">
-          <h2>How to participate?</h2>
+          <h2 id="heading-1">How to participate?</h2>
           <div className="steps-wrapper">
             <ul className="stepsGrid">
               <li className="step-card">
@@ -90,7 +90,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="resources">
+        <section id="heading-2" className="resources">
           <h2>Resources</h2>
           <p>For some inspiration to kick things off, check out <a className="link link--alt" href="#">this tutorial</a> on how to start<br />with Strapi and Next 14.</p>
           <div className="links">
@@ -101,7 +101,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="prizes">
+        <section id="heading-3" className="prizes">
           <h2>Prizes</h2>
           <p>Set to take place across [hackathon dates], this hackathon is an unparalleled opportunity for your team to engage with the latest Strapi technologies, and make a lasting impact on the open-source community.</p>
           <div className="prizesGrid">
@@ -132,7 +132,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="faq">
+        <section id="heading-4" className="faq">
           <h2>FAQ</h2>
           <details>
             <summary>Who can participate in the Strapi Hackathon?</summary>
