@@ -110,6 +110,9 @@ const RegisterTeam = () => {
                       <option value="Developer">Developer</option>
                       <option value="Designer">Designer</option>
                       <option value="Project Manager">Project Manager</option>
+                      <option value="Technical Writer">Project Manager</option>
+                      <option value="Sales Representative">Sales Representative</option>
+                      <option value="Other">Other</option>
                     </select>
                   </label>
                 </div>
