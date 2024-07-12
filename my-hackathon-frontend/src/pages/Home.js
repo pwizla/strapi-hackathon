@@ -15,8 +15,8 @@ const Home = () => {
           <a href="#heading-4">FAQ</a>
         </nav>
         <div className="nav-cta">
-          <button className="button button--alt">Share on X</button>
-          <button className="button"><a href="/register-step1">Join Hackathon</a></button>
+          <a className="button button--alt" href="#">Share on X</a>
+          <a className="button" href="/register-step-1">Join hackathon</a>
         </div>
       </header>
 
@@ -25,7 +25,7 @@ const Home = () => {
           <div className="hero-text">
             <h1>Strapi Global Hack Week</h1>
             <p>Connect with developers from around the world to push the boundaries of what’s possible with Strapi</p>
-            <button className="button">Join hackathon</button>
+            <a className="button" href="/register-step-1">Join hackathon</a>
           </div>
           <img className="hero-image" src={placeholder} alt="Placeholder" />
         </section>
@@ -54,7 +54,7 @@ const Home = () => {
           <div className="hero-text">
             <h2>About the hackathon</h2>
             <p>[placeholder text] Strapi is organizing its first hackathon to promote creativity, dogfooding, and innovation. The hackathon will be held remotely from July 10th to July 12th, 2024. Each team will create a presentation and prototype, upload the presentation by July 12th, and present it during the Monday Meeting on July 15th.</p>
-            <button className="button button--alt">How to participate?</button>
+            <a className="button button--alt" href="#heading-1">How to participate?</a>
           </div>
         </section>
 

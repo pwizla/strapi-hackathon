@@ -1,24 +1,36 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './index.css';
-import Home from './pages/Home';
-import RegisterPeople from './pages/RegisterPeople';
-import RegisterTeam from './pages/RegisterTeam';
-import RegisterSuccess from './pages/RegisterSuccess';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+import Home from "./pages/Home";
+import RegisterPeople from "./pages/RegisterPeople";
+import RegisterTeam from "./pages/RegisterTeam";
+import RegisterSuccess from "./pages/RegisterSuccess";
 
-const container = document.getElementById('root');
-const root = createRoot(container);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/register-step-1",
+    element: <RegisterPeople />,
+  },
+  {
+    path: "/register-step-2",
+    element: <RegisterTeam />,
+  },
+  {
+    path: "/register-success",
+    element: <RegisterSuccess />,
+  },
+]);
 
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" component={<Home />} />
-        <Route path="/register-step1" component={<RegisterPeople />} />
-        <Route path="/register-step2" component={<RegisterTeam />} />
-        <Route path="/register-step3" component={<RegisterSuccess />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>,
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

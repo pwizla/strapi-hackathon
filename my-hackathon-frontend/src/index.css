@@ -7,6 +7,7 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181825;
 }
 
 code {
@@ -29,7 +30,6 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #16181d;
 }
 
 .logo {
@@ -47,7 +47,7 @@ code {
   text-decoration: none;
 }
 
-.button {
+a.button, button {
   background-color: #4945ff;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -55,9 +55,11 @@ code {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+  font-size: .8rem;
 }
 
-.button--alt {
+a.button--alt, button--alt {
   background-color: transparent;
   color: #7b8df7;
   border: solid 1px #d9d8fc;

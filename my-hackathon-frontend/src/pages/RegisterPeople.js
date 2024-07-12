@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-// import './Register.css';
+import '../RegisterPeople.css';
+import logo from '../logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,8 @@ const Register = () => {
     timeZone: ''
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -19,10 +23,17 @@ const Register = () => {
     e.preventDefault();
     // Handle form submission
     console.log(formData);
+
+    // After successful submission, redirect to another page
+    navigate('/register-step-2');
   };
 
   return (
+
     <div className="container">
+      <header className="register-header">
+        <a href="/"><img className="logo" src={logo} alt="logo" /></a>
+      </header>
       <div className="form-container">
         <h2>Step 1</h2>
         <h1>Personal information</h1>
