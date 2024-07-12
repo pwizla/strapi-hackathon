@@ -15,7 +15,7 @@ const Home = () => {
           <a href="#heading-4">FAQ</a>
         </nav>
         <div className="nav-cta">
-          <a className="button button--alt" href="#">Share on X</a>
+          <a className="button button--alt" href="https://twitter.com/intent/tweet?text=Join%20us%20for%20an%20amazing%20hackathon%21&url=https%3A%2F%2Fstrapi-hackathon.vercel.app" target="_blank" rel="noopener noreferrer">Share on X</a>
           <a className="button" href="/register-step-1">Join hackathon</a>
         </div>
       </header>
