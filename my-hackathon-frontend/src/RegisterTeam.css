@@ -81,3 +81,7 @@ button:hover {
   margin-top: 4rem;
   margin-bottom: 8rem;
 }
+
+input.looking-for-team {
+  width: auto;
+}

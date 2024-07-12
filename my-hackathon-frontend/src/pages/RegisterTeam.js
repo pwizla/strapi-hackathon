@@ -41,77 +41,82 @@ const RegisterTeam = () => {
         <form onSubmit={handleSubmit}>
           <label>
             <input
+              className='looking-for-team'
               type="checkbox"
               checked={isLookingForTeam}
               onChange={() => setIsLookingForTeam(!isLookingForTeam)}
             />
             I'm looking for a team to join
           </label>
-          <label>
-            Team name*
-            <input
-              type="text"
-              name="teamName"
-              value={teamName}
-              onChange={(e) => setTeamName(e.target.value)}
-              placeholder="Enter team name"
-              required
-            />
-          </label>
-          <h3>Team members</h3>
-          <p>You don’t have to provide your personal information again. Min size of the team 3 ppl, max size of the team 5 ppl, you included.</p>
-          {members.map((member, index) => (
-            <div key={index} className="member">
+          {!isLookingForTeam && (
+            <div>
               <label>
-                Team member full name*
+                Team name*
                 <input
                   type="text"
-                  name="fullName"
-                  value={member.fullName}
-                  onChange={(e) => handleMemberChange(index, e)}
-                  placeholder="Enter team member full name"
+                  name="teamName"
+                  value={teamName}
+                  onChange={(e) => setTeamName(e.target.value)}
+                  placeholder="Enter team name"
                   required
                 />
               </label>
-              <label>
-                Team member e-mail address*
-                <input
-                  type="email"
-                  name="email"
-                  value={member.email}
-                  onChange={(e) => handleMemberChange(index, e)}
-                  placeholder="Enter team member e-mail address"
-                  required
-                />
-              </label>
-              <label>
-                Team member date of birth*
-                <input
-                  type="text"
-                  name="birthDate"
-                  value={member.birthDate}
-                  onChange={(e) => handleMemberChange(index, e)}
-                  placeholder="DD-MM-YYYY"
-                  required
-                />
-              </label>
-              <label>
-                Role*
-                <select
-                  name="role"
-                  value={member.role}
-                  onChange={(e) => handleMemberChange(index, e)}
-                  required
-                >
-                  <option value="">Select role</option>
-                  <option value="Developer">Developer</option>
-                  <option value="Designer">Designer</option>
-                  <option value="Project Manager">Project Manager</option>
-                </select>
-              </label>
+              <h3>Team members</h3>
+              <p>You don’t have to provide your personal information again. Min size of the team 3 ppl, max size of the team 5 ppl, you included.</p>
+              {members.map((member, index) => (
+                <div key={index} className="member">
+                  <label>
+                    Team member full name*
+                    <input
+                      type="text"
+                      name="fullName"
+                      value={member.fullName}
+                      onChange={(e) => handleMemberChange(index, e)}
+                      placeholder="Enter team member full name"
+                      required
+                    />
+                  </label>
+                  <label>
+                    Team member e-mail address*
+                    <input
+                      type="email"
+                      name="email"
+                      value={member.email}
+                      onChange={(e) => handleMemberChange(index, e)}
+                      placeholder="Enter team member e-mail address"
+                      required
+                    />
+                  </label>
+                  <label>
+                    Team member date of birth*
+                    <input
+                      type="text"
+                      name="birthDate"
+                      value={member.birthDate}
+                      onChange={(e) => handleMemberChange(index, e)}
+                      placeholder="DD-MM-YYYY"
+                      required
+                    />
+                  </label>
+                  <label>
+                    Role*
+                    <select
+                      name="role"
+                      value={member.role}
+                      onChange={(e) => handleMemberChange(index, e)}
+                      required
+                    >
+                      <option value="">Select role</option>
+                      <option value="Developer">Developer</option>
+                      <option value="Designer">Designer</option>
+                      <option value="Project Manager">Project Manager</option>
+                    </select>
+                  </label>
+                </div>
+              ))}
+              <button type="button button--alt" onClick={handleAddMember}>+ Add another team member</button>
             </div>
-          ))}
-          <button type="button button--alt" onClick={handleAddMember}>+ Add another team member</button>
+          )}
           <button type="submit">Send registration form</button>
         </form>
       </div>
